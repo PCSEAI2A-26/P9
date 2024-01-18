@@ -1,0 +1,222 @@
+*{
+    margin:0%;
+    padding: 0%;
+}
+
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background: linear-gradient(to bottom, #000000, #171717); /* Adjust gradient colors as needed */
+}
+
+
+
+
+/* Style for the list items */
+.des {
+    position: relative;
+    list-style: none; /* Remove default list bullet */
+    
+}
+
+/* Create the small block */
+.des::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;    
+    bottom: 0;
+    left: 0;
+    background-color: #f4f0f6; /* Color of the block */
+    transition: width 0.4s ease-in-out;
+    transform-origin: left; /* Make the block expand from the left */
+}
+
+/* Show the block when hovering over the list item */
+.des:hover::before {
+    width: 100%; /* Expand to 100% width on hover */
+}
+
+
+
+/* Style for the buttons */
+.button {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.button button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carousel-item img{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 91vh;
+    
+
+}
+.order {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 2; /* Set a higher z-index to make it appear above the carousel */
+}
+
+.order p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.order button {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.order button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+
+
+
+
+#loginpopup {
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+    
+    z-index: 10; /* Set a high z-index to ensure it appears above other elements */
+}
+
+
+.info{
+  transform: translateY(-10px);
+}
+.infos{
+  transform: translateY(-4px);
+}
+
+/* Dashboard */
+.dashboard-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999; /* Adjust the z-index as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style for the dashboard */
+  .dashboard {
+    position: relative;
+    display: flex;
+    background-color: rgba(52, 152, 219, 0.9); /* Soft blue with alpha (translucent) */
+    padding: 6vw; /* Adjust padding as needed */
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5);
+    border-radius: 20px; /* Adjust border radius as needed */
+    animation: fadeInUp 0.5s ease-in-out; /* Add a fade-in animation */
+  }
+  #carousel{
+    animation: fadeInUp 0.5s ease-in-out; /* Add a fade-in animation */
+  }
+  
+  .dashboard img.user-logo {
+    height: 10vw; /* Adjust user logo height as needed */
+    margin-right: 9rem; /* Add margin between user logo and form */
+  }
+
+  /* Close button style */
+  .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .inputss {
+    width: 100%;
+    margin-top: 1vw;
+    margin-right: 2vw; /* Increase padding-right */
+    position: relative;
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+  }
+  
+  
+  
+  /* Password logo style */
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+
+  /* Fade out animation */
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
