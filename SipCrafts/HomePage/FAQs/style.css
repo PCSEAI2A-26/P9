@@ -1,0 +1,123 @@
+*{
+    margin:0;
+}
+
+
+body {
+    background-color    : rgba(136, 133, 133, 0.5);
+    background-size: cover;
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.login_page{
+    display: none;
+    height: 800px;
+    width:700px;
+    background-color: #fff;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    background-color: rgb(248, 245, 245);
+    height: 800px;
+    width: 800px;
+    margin-left: 650px;
+    margin-top: 50px;
+}
+.ques{
+    font-size: 45px;
+    font-family: 'Abril Fatface', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif;
+    /* font-weight: -100; */
+    margin-left: 280px;
+    margin-top: 100px;
+}
+p1{
+    font-size: 20px;
+    color: rgb(84, 84, 84);
+    margin-left:285px;
+
+}
+a{
+    /* text-decoration: none; */
+    color: #ede0e3;
+   text-decoration: none;
+}
+.hov {
+    color: gray;
+}
+
+
+
+
+
+
+
+/* Style for the list items */
+.des {
+    position: relative;
+    list-style: none; /* Remove default list bullet */
+    
+}
+
+/* Create the small block */
+.des::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;    
+    bottom: 0;
+    left: 0;
+    background-color: #f4f0f6; /* Color of the block */
+    transition: width 0.4s ease-in-out;
+    transform-origin: left; /* Make the block expand from the left */
+}
+
+/* Show the block when hovering over the list item */
+.des:hover::before {
+    width: 100%; /* Expand to 100% width on hover */
+}
+.im img{
+    height: 600px;
+    width:10000px
+}
+
+
+
+
+.social-link {
+    filter: brightness(100%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.social-link.darken:hover {
+    filter: brightness(70%);
+}
+
+
+
+/* Add styling for the Facebook link */
+
+
+/* Combine the styles for Instagram, Twitter, and Facebook links */
+.icon {
+  
+    display: flex;
+    gap: 10px; /* Adjust the gap as needed */
+}
+
+.social-link {
+    filter: brightness(100%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.social-link.darken:hover {
+    filter: brightness(70%);
+}

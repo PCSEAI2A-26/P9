@@ -1,0 +1,261 @@
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.details-box {
+  background-color: #222222 ;
+  /* box-shadow: 0px 7px 50px rgba(163, 161, 161, 0.9); */
+
+
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+
+  grid-gap: 20px;
+}
+.item .imag img {
+  height: 250px;
+  transition: transform 0.2s;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to the element you want to animate */
+.item .imag img,
+.item .imag {
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+.item .imag img:hover {
+  transform: translate(0, -50px);
+}
+
+.item .imag {
+  display: flex;
+  justify-content: center;
+  background-color: #222222;
+  border-radius: 20px;
+}
+
+.content .title {
+  display: flex;
+  justify-content: center;
+}
+
+.content .details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add {
+
+  background-color:#3d3c3c;
+
+  border-radius: 40px;
+  /* margin-left: 70px; */
+  padding: 10px 30px 10px 30px;
+  font-size: 20px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 20px;
+}
+.content {
+  color: #fff;
+}
+.price {
+  font-weight: 900;
+}
+.add:hover {
+  transform: scale(1.1);
+  opacity: 2;
+}
+.content {
+  background-color: #ffffff26;
+  border-radius: 30px;
+  padding-top: 30px;
+  transform: translate(0px, -30px);
+  backdrop-filter: blur(20px);
+}
+
+.listpage {
+  display: grid;
+  grid-template-columns: repeat(5, 50px);
+  grid-gap: 20px;
+  text-align: center;
+  margin-left: 300px;
+}
+.Previ {
+  list-style: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: inline-block;
+  background-color: #ffffffbd;
+}
+.Previ:hover {
+  background-color: rgb(201, 173, 228);
+}
+.Nexts:hover {
+  background-color: rgb(201, 173, 228);
+}
+.Nexts {
+  list-style: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: inline-block;
+  background-color: #ffffffbd;
+}
+.active {
+  list-style: none;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  display: inline-block;
+  background-color: #ffffffbd;
+}
+.active:hover {
+  background-color: rgb(201, 173, 228);
+}
+* {
+  margin: 0;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  /* background-color: rgb(255, 252, 252); */
+  height: 800px;
+  width: 800px;
+  /* margin-left: 650px; */
+  margin-top: 50px;
+}
+a {
+  /* text-decoration: none; */
+  color: #ede0e3;
+  text-decoration: none;
+  font-weight: 1000;
+}
+.hov {
+  color: rgb(242, 238, 238);
+}
+
+/* Style for the list items */
+.des {
+  position: relative;
+  list-style: none; /* Remove default list bullet */
+}
+
+/* Create the small block */
+.des::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px; /* Adjust the height as needed */
+  bottom: 0;
+  left: 0;
+  background-color: #f6f1f1; /* Color of the block */
+  transition: width 0.3s ease-in-out;
+  transform-origin: left; /* Make the block expand from the left */
+}
+
+/* Show the block when hovering over the list item */
+.des:hover::before {
+  width: 100%; /* Expand to 100% width on hover */
+}
+
+.advertise {
+  margin-top: 50px;
+  margin-left: 0px;
+}
+.offer {
+  display: flex;
+  align-items: center;
+}
+.footer {
+  background-color: #1A222E;
+  color: #fff;
+
+  margin-top: 410px;
+  padding-top: 0px;
+}
+
+
+
+/* Apply the animation to the element */
+.fa-beat-fade {
+  animation: beat-fade 0.5s infinite; /* Adjust the animation duration and other properties as needed */
+  transform-origin: center; /* Optional: Set the transform origin to the center for a better effect */
+}
+
+/* Pause the animation when not hovering */
+.fa-beat-fade:not(:hover) {
+  animation-play-state: paused;
+}
+
+.description .img {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+
+/* image size which is come inside the container when we hover */
+.contain .img img{
+  margin-left: 40%;
+  height: 350px;
+}
+
+.cont{
+  font-size: x-large;
+  font-weight: 800;
+  color: white;
+  margin-top: 50px;
+}
+
+
+
+.item img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.item:hover img {
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.item img {
+  animation: fadeIn 0.5s ease-out;
+  /* Add other styling properties as needed */
+}
+
+
+
+
+
+
+
